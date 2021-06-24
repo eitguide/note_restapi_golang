@@ -1,0 +1,37 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /json                     --> main.main.func2 (3 handlers)
+[GIN-debug] GET    /xml                      --> main.main.func3 (3 handlers)
+[GIN-debug] GET    /yaml                     --> main.main.func4 (3 handlers)
+[GIN-debug] GET    /jsonsecure               --> main.main.func5 (3 handlers)
+[GIN-debug] GET    /jsonp                    --> main.main.func6 (3 handlers)
+[GIN-debug] GET    /jsonascii                --> main.main.func7 (3 handlers)
+[GIN-debug] GET    /health                   --> main.main.func8 (3 handlers)
+[GIN-debug] GET    /ping                     --> main.main.func9 (3 handlers)
+[GIN-debug] GET    /assets/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /assets/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] GET    /v1/notes                 --> main.main.func10 (3 handlers)
+[GIN-debug] POST   /v1/notes                 --> main.main.func11 (3 handlers)
+[GIN-debug] PUT    /v1/notes                 --> main.main.func12 (3 handlers)
+[GIN-debug] GET    /v1/notes/:id             --> main.main.func13 (3 handlers)
+[GIN-debug] DELETE /v1/notes/:id             --> main.main.func14 (3 handlers)
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+::1 - [Thu, 24 Jun 2021 07:27:44 +07] "GET /json HTTP/1.1 200 205.996µs "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" "
+::1 - [Thu, 24 Jun 2021 07:27:48 +07] "GET /jsonsercure HTTP/1.1 404 346ns "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" "
+::1 - [Thu, 24 Jun 2021 07:27:55 +07] "GET /jsonsecure HTTP/1.1 200 35.181µs "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" "
+::1 - [Thu, 24 Jun 2021 07:28:01 +07] "GET /jsonp HTTP/1.1 200 56.519µs "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" "
+::1 - [Thu, 24 Jun 2021 07:28:12 +07] "GET /jsonsecure HTTP/1.1 200 43.956µs "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" "
+::1 - [Thu, 24 Jun 2021 07:28:20 +07] "GET /jsonsecure HTTP/1.1 200 43.697µs "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" "
+::1 - [Thu, 24 Jun 2021 07:28:20 +07] "GET /favicon.ico HTTP/1.1 404 243ns "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" "
+::1 - [Thu, 24 Jun 2021 07:28:35 +07] "GET /jsonsecure HTTP/1.1 200 37.713µs "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" "
+::1 - [Thu, 24 Jun 2021 07:28:36 +07] "GET / HTTP/1.1 404 203ns "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" "
+::1 - [Thu, 24 Jun 2021 07:28:36 +07] "GET /favicon.ico HTTP/1.1 404 378ns "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" "
+::1 - [Thu, 24 Jun 2021 07:28:36 +07] "GET /jsonascii HTTP/1.1 200 30.79µs "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" "
+::1 - [Thu, 24 Jun 2021 07:28:36 +07] "GET /favicon.ico HTTP/1.1 404 247ns "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" "
+::1 - [Thu, 24 Jun 2021 07:28:46 +07] "GET /jsonascii HTTP/1.1 200 75.844µs "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" "
+::1 - [Thu, 24 Jun 2021 07:28:47 +07] "GET / HTTP/1.1 404 258ns "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" "
+::1 - [Thu, 24 Jun 2021 07:28:47 +07] "GET /yaml HTTP/1.1 200 202.258µs "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" "
+::1 - [Thu, 24 Jun 2021 07:29:14 +07] "GET /xml HTTP/1.1 200 114.759µs "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" "
